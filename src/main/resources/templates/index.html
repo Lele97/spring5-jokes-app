@@ -6,7 +6,7 @@
     <style>
         .made-up {
             background-color: #ffc317;
-            font-family: arial,serif;
+            font-family: arial, serif;
             margin: 1rem;
             border-radius: 10px;
             border: none;
@@ -14,8 +14,8 @@
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
 
-        .brown, .made-up legend, .made-up button {
-            background: #584B4F;
+        .made-up legend, .made-up button {
+            background: #808080;
             color: #FEFEFE;
         }
 
@@ -67,9 +67,8 @@
 <body>
 <fieldset class="made-up">
     <legend>Assignment:</legend>
-    <h1 th:text="${text}" class=""></h1>
-    <h2 th:text="${textJoke}" class=""></h2>
-
+    <h1 th:text="${text}"></h1>
+    <h2 th:text="${textJoke}"></h2>
 </fieldset>
 </body>
 </html>

@@ -15,13 +15,11 @@ public class JokeController {
     private JokeService jokeService;
 
     @GetMapping("/getjoke")
-    public String getJoke(Model model){
+    public String getJoke(Model model) {
         model.addAttribute("textJoke", jokeService.getJoke());
-        model.addAttribute("text","Message.");
-    return "index";
+        model.addAttribute("text", "Message.");
+        return "index";
     }
-
-
 
 
 }
